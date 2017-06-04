@@ -1,5 +1,4 @@
 class Account:
-    #Set up as a single class
     def __init__(self, name, balance, minBalance):
         self.name = name
         self.balance = balance
@@ -17,7 +16,6 @@ class Account:
     def statement(self):
         print("Account Balance: {} Pounds".format(self.balance))
 
-#Set up as single or two seperate classes
 class Checking(Account):
     def __init__(self, name, balance):
         super().__init__(name, balance, minBalance = -1000)
